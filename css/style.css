@@ -1,0 +1,402 @@
+h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 56px;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    text-align: center;
+}
+h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+}
+.list_title{ /*h3*/
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.body{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    color: #434455;
+}
+.small_text{
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 0.8;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+}
+.body_medium{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+}
+button{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    cursor: pointer;
+}
+.linkText{
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+*{ /* I used "*" instead of "body" because "body" does not inherit all styles to elements unlike "*" */
+    font-family: "Roboto", sans-serif;
+    color: #2E2F42;
+    font-style: normal;
+}
+body{
+    background-color: #FFFFFF;
+    color: #434455;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+}
+.visually-hidden{
+    visibility: hidden;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+.section_title{
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize
+}
+.header{
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.logo{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+}
+.logo span{
+    color: #2e2f42;
+}
+header ul li a:hover{
+    color: #404bbf;
+}
+header ul li a:focus{
+    color: #404bbf;
+}
+.contacts a{
+    color: #434455;
+}
+.hero_title{
+    color: #FFFFFF;
+    line-height: 1.07;
+}
+.hero_button:hover{
+    background-color: #404BBF;
+}
+.hero_button:focus{
+    background-color: #404BBF;
+}
+.section_title_01{
+    line-height: 1.2;
+}
+.team_section{
+    background-color: #F4F4FD;
+}
+.team_card{
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);;
+}
+.team_card:hover{
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 8%), 0px 1px 1px 0px rgba(46, 47, 66, 16%), 0px 2px 1px 0px rgba(46, 47, 66, 8%);
+}
+.footer{
+    background-color: #2E2F42;
+}
+.footer .body{
+    color: #F4F4FD;
+}
+img{
+    display: block;
+}
+.container{
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    display: flex;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.logo_item{
+    margin-right: 76px;
+}
+.menu_navigation{
+    display: flex;
+    gap: 40px
+}
+.menu_items{
+     position: relative;
+     color: #404bbf;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu_items::after{
+    position: absolute;
+    left: 0;
+    bottom: -1px; 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+}
+.menu_items:hover::after{
+    background: #404bbf;
+}
+.menu_items{
+    padding: 24px 0;
+}
+header{
+    border-bottom: 1px solid #e7e9fc;  
+}
+header .container{
+    justify-content: space-between;
+    align-items: center;
+    min-height: 72px;
+}
+.contacts_list{
+    display: flex;
+    gap: 40px;
+}
+.contacts_list li a{
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero_image_section{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero_section_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1440px;
+    background-size: cover;
+    padding: 188px 0;
+}
+.hero_image_section .container{
+    flex-direction: column;
+    align-items: center;
+}
+.hero_title{
+    max-width: 496px;
+}
+.hero_button{
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #FFFFFF;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section_one {
+    padding: 120px 0;
+}
+.section_one_list {
+    display: flex;
+    gap: 24px;
+}
+.banner_item {
+    width: calc((100% - 72px) / 4);
+}
+.svg_banner_item_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4FD;
+    border: 1px solid #8E8F99;
+    margin-bottom: 8px;
+    height: 112px;
+    border-radius: 4px;
+}
+.section_one_item {
+    flex-basis: calc((100% - 72px) / 4);
+}
+.section_one_item .list_title {
+    margin-bottom: 8px;
+}
+.visually_hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.team_section{
+    padding: 120px 0;
+}
+.team_section .container{
+    flex-direction: column;
+}
+.team_section_title{
+    margin-bottom: 72px;
+}
+.team_section_list{
+    display: flex;
+    gap: 24px;
+}
+.team_section_list li {
+    /* flex-basis: calc((100% - 72px) / 4); */
+    border-radius: 0px 0px 4px 4px;
+}
+.team_card_description_container{
+    padding: 32px 0;
+}
+.team_card_description_container .list_title{
+    text-align: center;
+    margin-bottom: 8px;
+}
+.team_card_description_container .body{
+    text-align: center;
+}
+.svg_team_container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 24px;
+}
+.svg_icon_wrapper_block{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.svg_icon_wrapper_block a{ 
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.svg_icon_wrapper_block a:hover,
+.svg_icon_wrapper_block a:focus{
+    background-color: #404bbf;
+}
+.svg_icon_wrapper_block a svg{
+    fill: #F4F4FD;
+}
+.our_portfolio{
+    padding: 120px 0 120px 0;
+}
+.our_portfolio .container{
+    flex-direction: column;
+}
+.our_portfolio .section_title{
+    margin-bottom: 72px;
+}
+.portfolio_list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px; 
+    row-gap: 48px;
+}
+.portfolio_list_items{
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio_list_items:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.portfolio_hideen_item{
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio_list_items:hover .portfolio_hideen_item{
+    transform: translateY(0%);
+}
+.portfolio_list_img_wrap_container{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio_list_description_container{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+.portfolio_list_description_container .list_title{
+    margin-bottom: 8px;
+}
+.footer{
+    padding: 100px 0;
+}
+.footer_wrapper_container{
+    display: flex;
+    align-items: baseline;
+}
+.footer_logos_container{
+    display: block;
+    margin-right: 120px;
+}
+.footer .logo{
+    display: inline-block;
+}
+.footer .body{
+    max-width: 264px;
+}
+.social_media_title{
+     margin-bottom: 16px;
+}
+.social_media_container p{
+    color: #FFFFFF;
+}
+.icons_container{
+    display: flex;
+    gap: 16px;
+}
+footer .svg_icon_wrapper_block a:hover,
+footer .svg_icon_wrapper_block a:focus{
+    background-color: #31d0aa;
+}
