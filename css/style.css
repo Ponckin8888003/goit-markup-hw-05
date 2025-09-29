@@ -410,37 +410,40 @@ footer .svg_icon_wrapper_block a:focus{
     height: 100%;
     z-index: 999;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 
     visibility: hidden;
     background: rgba(46, 47, 66, 40%);
 
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is_open{
     visibility: visible;
 }
 .modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
     border-radius: 4px;
     background-color: #FCFCFC;
-    padding: 24px;
+    padding: 72px 24px 24px 24px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 20%), 0px 1px 3px 0px rgba(0, 0, 0, 12%), 0px 1px 1px 0px rgba(0, 0, 0, 14%);
-    max-width: 480px;
-    max-height: 80%;
+    width: 408px;
+    min-height: 584px;
+    transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .form{
     display: flex;
     display: flex;
     flex-direction: column;
 }
-.modal_close_button{
-    width: 100%;
-    display: flex;
-    justify-content: right;
-}
-.svg_close_wrapper_container{
+
+.svg_close_button{
+    position: absolute;
+    top: 24px;
+    right: 24px;
     width: 24px;
     height: 24px;
     display: flex;
@@ -449,18 +452,24 @@ footer .svg_icon_wrapper_block a:focus{
     cursor: pointer;
     border-radius: 50%;
     background-color: #E7E9FC;
-    border: 1px solid rgba(0, 0, 0, 10%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     fill: #2E2F42;
-    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 24px;
+    padding: 0;
 }
-.svg_close_wrapper_container:hover{
+.svg_close_button:hover,
+.svg_close_button:focus{
     fill: #FFFFFF;
     background-color: #404BBF;
-    border: 1px solid #404BBF;
+    border: none;
+}
+.svg_icon_container{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal_title{
     margin-bottom: 16px;
+    text-align: center;
 }
 .form input{
     width: 100%;
