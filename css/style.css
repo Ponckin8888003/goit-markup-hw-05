@@ -507,9 +507,7 @@ footer .svg_icon_wrapper_block a:focus{
 .label_wrapper_container input:focus{
      border-color: #4D5AE5; 
 }
-{
-    fill: #4D5AE5;
-}
+
 .form_label{
     color: #8E8F99;
     fill: #2E2F42;
