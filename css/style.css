@@ -448,9 +448,6 @@ footer .svg_icon_wrapper_block a:focus{
 .comment_form_wrapper_container{
     margin-bottom: 16px;
 }
-.policy_section{
-    margin-bottom: 24px;
-}
 .label_wrapper_container{
     position: relative;
 }
@@ -546,7 +543,7 @@ footer .svg_icon_wrapper_block a:focus{
     display: flex;
     width: 100%;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     justify-content: space-between;
 }
 .policy_section input{
@@ -571,9 +568,11 @@ footer .svg_icon_wrapper_block a:focus{
     justify-content: center;
     fill: transparent; 
 }
-.policy_section input:checked + .policy_form_span{
+.policy_section input:checked + label .policy_form_span {
     background-color: #404bbf;
     border: none;
+}
+.policy_section input:checked + label .policy_form_span .policy_svg_icon_container {
     fill: #F4F4FD;
 }
 .privacy_policy_text{
