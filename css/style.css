@@ -572,7 +572,7 @@ footer .svg_icon_wrapper_block a:focus{
     background-color: #404bbf;
     border: none;
 }
-.policy_section input:checked + label .policy_form_span .policy_svg_icon_container {
+.policy_section input:checked + label .policy_form_span{
     fill: #F4F4FD;
 }
 .privacy_policy_text{
