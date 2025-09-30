@@ -392,14 +392,29 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer_wrapper_form">
+                <p class="body_medium footer_form_title">Subtitle</p>
+                <form class="footer_form">
+                    <label class="form_label">
+                        <input type="email" name="email" class="footer_form_input" placeholder="E-mail" type="text">
+                    </label>
+                    <button type="button" class="footer_form_button button">
+                        Subscribe
+                        <svg class="svg_icon_container" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
-    <div class="modal_overlay is_open">
+    <!-- is_open -->
+    <div class="modal_overlay is_open ">
         <div class="modal">
 
             <button type="button" class="svg_close_button">
-                <svg class="svg_icon_close_container" width="8px" height="8px">
+                <svg class="svg_icon_close_container" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
@@ -449,15 +464,16 @@
                         class="comment_textarea"></textarea>
                 </div>
                 <div class="form_wrapper_container policy_section">
-                        <input type="checkbox" name="user-privacy" class="visually-hidden" value="true" id="user-privacy">
-                        <label class="small_text policy_acception_text" for="user-privacy" >I accept the terms and conditions of the
-                            <span class="policy_form_span">
-                                <svg class="svg_icon_container" width="10" height="8">
-                                    <use href="./images/icons.svg#"></use>
-                                </svg>
-                            </span>
-                            <a href="#" class="privacy_policy_text">Privacy Policy</a>
-                        </label>
+                    <input type="checkbox" name="user-privacy" class="visually-hidden" value="true" id="user-privacy">
+                    <label class="small_text policy_acception_text" for="user-privacy">I accept the terms and conditions
+                        of the
+                        <span class="policy_form_span">
+                            <svg class="svg_icon_container" width="10" height="8">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        <a href="#" class="privacy_policy_text">Privacy Policy</a>
+                    </label>
                 </div>
                 <button type="button" class="form_button button">
                     Send
